@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "misc_items",
+  "info": {
+    "name": "misc-items"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "lu_technologies": {
+      "collection": "lu-technology",
+      "via": "misc_item"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "automation_items",
+  "info": {
+    "name": "AutomationItems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "lu_technologies": {
+      "collection": "lu-technology",
+      "via": "automation_item"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
