@@ -10,7 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "knex": "0.21.18",
+    "knex": "^0.21.18",
     "nodemailer": "^6.6.3",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.4.0",
@@ -27,13 +27,13 @@
     "strapi-utils": "3.6.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Dan Wu"
   },
   "strapi": {
     "uuid": "12424501-3739-4b1c-b8fb-193cc80ce9db"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=10.16.0 <=12.14.1",
     "npm": "^6.0.0"
   },
   "license": "MIT"
