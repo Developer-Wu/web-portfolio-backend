@@ -17,12 +17,12 @@
     "description": {
       "type": "text"
     },
-    "lu_technologies": {
-      "collection": "lu-technology",
-      "via": "automation_item"
-    },
     "link": {
       "type": "string"
+    },
+    "lu_technologies": {
+      "via": "automation_items",
+      "collection": "lu-technology"
     }
   }
 }

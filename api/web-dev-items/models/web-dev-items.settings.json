@@ -22,8 +22,8 @@
       "type": "text"
     },
     "lu_technologies": {
-      "collection": "lu-technology",
-      "via": "web_dev_item"
+      "via": "web_dev_items",
+      "collection": "lu-technology"
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "lu_technologies",
   "info": {
-    "name": "LU_technology"
+    "name": "LU_technology",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,17 +15,20 @@
     "tech": {
       "type": "string"
     },
-    "web_dev_item": {
+    "web_dev_items": {
+      "collection": "web-dev-items",
       "via": "lu_technologies",
-      "model": "web-dev-items"
+      "dominant": true
     },
-    "automation_item": {
+    "automation_items": {
+      "collection": "automation-items",
       "via": "lu_technologies",
-      "model": "automation-items"
+      "dominant": true
     },
-    "misc_item": {
+    "misc_items": {
+      "collection": "misc-items",
       "via": "lu_technologies",
-      "model": "misc-items"
+      "dominant": true
     }
   }
 }
