@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lu_prices",
+  "info": {
+    "name": "LU_price"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    },
+    "restaurants": {
+      "via": "lu_price",
+      "collection": "restaurants"
+    }
+  }
+}

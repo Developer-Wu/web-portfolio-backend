@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lu_categories",
+  "info": {
+    "name": "LU_categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "restaurants": {
+      "via": "lu_categories",
+      "collection": "restaurants"
+    }
+  }
+}
