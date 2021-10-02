@@ -24,6 +24,9 @@
     "restaurant": {
       "model": "restaurants",
       "via": "recommended_dishes"
+    },
+    "restaurant_link": {
+      "type": "string"
     }
   }
 }
