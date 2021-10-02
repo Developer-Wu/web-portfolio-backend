@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recommended-dishes",
+      "handler": "recommended-dishes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recommended-dishes/count",
+      "handler": "recommended-dishes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recommended-dishes/:id",
+      "handler": "recommended-dishes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recommended-dishes",
+      "handler": "recommended-dishes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recommended-dishes/:id",
+      "handler": "recommended-dishes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recommended-dishes/:id",
+      "handler": "recommended-dishes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

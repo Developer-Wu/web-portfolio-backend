@@ -39,7 +39,15 @@
       "model": "districts"
     },
     "lu_price": {
+      "via": "restaurants",
       "model": "lu-price"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "recommended_dishes": {
+      "via": "restaurant",
+      "collection": "recommended-dishes"
     }
   }
 }
