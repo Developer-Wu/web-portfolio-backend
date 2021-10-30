@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lu-categories",
+      "handler": "lu-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-categories/count",
+      "handler": "lu-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-categories/:id",
+      "handler": "lu-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lu-categories",
+      "handler": "lu-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lu-categories/:id",
+      "handler": "lu-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lu-categories/:id",
+      "handler": "lu-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

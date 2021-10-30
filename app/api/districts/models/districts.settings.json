@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "districts",
+  "info": {
+    "name": "LU_districts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "district": {
+      "type": "string"
+    },
+    "restaurants": {
+      "via": "lu_district",
+      "collection": "restaurants"
+    }
+  }
+}

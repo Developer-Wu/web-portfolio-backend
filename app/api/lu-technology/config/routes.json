@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lu-technologies",
+      "handler": "lu-technology.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-technologies/count",
+      "handler": "lu-technology.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-technologies/:id",
+      "handler": "lu-technology.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lu-technologies",
+      "handler": "lu-technology.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lu-technologies/:id",
+      "handler": "lu-technology.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lu-technologies/:id",
+      "handler": "lu-technology.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
