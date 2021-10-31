@@ -58,6 +58,11 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "restaurants": {
+      "collection": "restaurants",
+      "via": "users",
+      "dominant": true
     }
   }
 }

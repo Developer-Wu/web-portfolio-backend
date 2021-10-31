@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ig-posts",
+      "handler": "ig-posts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ig-posts/count",
+      "handler": "ig-posts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ig-posts/:id",
+      "handler": "ig-posts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ig-posts",
+      "handler": "ig-posts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ig-posts/:id",
+      "handler": "ig-posts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ig-posts/:id",
+      "handler": "ig-posts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -48,6 +48,11 @@
     "recommended_dishes": {
       "via": "restaurant",
       "collection": "recommended-dishes"
+    },
+    "users": {
+      "via": "restaurants",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

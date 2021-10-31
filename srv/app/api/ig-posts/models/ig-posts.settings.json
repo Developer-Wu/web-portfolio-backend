@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ig_posts",
+  "info": {
+    "name": "IG Posts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post_id": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "post_time": {
+      "type": "datetime"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "hashtags": {
+      "collection": "hashtags",
+      "via": "ig_posts",
+      "dominant": true
+    }
+  }
+}
