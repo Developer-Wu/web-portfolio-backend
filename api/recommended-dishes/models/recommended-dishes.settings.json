@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommended_dishes",
+  "info": {
+    "name": "recommended dishes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dish_name": {
+      "type": "string"
+    },
+    "dish_link": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "restaurant": {
+      "model": "restaurants",
+      "via": "recommended_dishes"
+    },
+    "restaurant_link": {
+      "type": "string"
+    }
+  }
+}

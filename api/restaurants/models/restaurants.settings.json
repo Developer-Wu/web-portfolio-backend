@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "restaurants",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "restaurant_name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "picture_url": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "dislikes": {
+      "type": "integer"
+    },
+    "lu_categories": {
+      "collection": "lu-categories",
+      "via": "restaurants",
+      "dominant": true
+    },
+    "lu_district": {
+      "model": "districts"
+    },
+    "lu_price": {
+      "via": "restaurants",
+      "model": "lu-price"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "recommended_dishes": {
+      "via": "restaurant",
+      "collection": "recommended-dishes"
+    },
+    "users": {
+      "via": "restaurants",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

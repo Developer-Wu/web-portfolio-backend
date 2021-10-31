@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_dev_items",
+  "info": {
+    "name": "WebDevItems",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "lu_technologies": {
+      "via": "web_dev_items",
+      "collection": "lu-technology"
+    }
+  }
+}

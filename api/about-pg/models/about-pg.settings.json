@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_pgs",
+  "info": {
+    "name": "AboutPgs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lu-prices",
+      "handler": "lu-price.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-prices/count",
+      "handler": "lu-price.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lu-prices/:id",
+      "handler": "lu-price.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lu-prices",
+      "handler": "lu-price.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lu-prices/:id",
+      "handler": "lu-price.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lu-prices/:id",
+      "handler": "lu-price.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

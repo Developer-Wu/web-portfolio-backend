@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lu_technologies",
+  "info": {
+    "name": "LU_technology",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tech": {
+      "type": "string"
+    },
+    "web_dev_items": {
+      "collection": "web-dev-items",
+      "via": "lu_technologies",
+      "dominant": true
+    },
+    "automation_items": {
+      "collection": "automation-items",
+      "via": "lu_technologies",
+      "dominant": true
+    },
+    "misc_items": {
+      "collection": "misc-items",
+      "via": "lu_technologies",
+      "dominant": true
+    }
+  }
+}
